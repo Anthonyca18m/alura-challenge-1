@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max (Desafio Alura Encriptar y Desencriptar)</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-left">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Logo">
+            </div>
+            <div class="texto">
+                <textarea id="in-texto" cols="30" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="botones">
+                <p>Solo letras minúsculas y sin acentos</p>
+                <button id="btn-e" class="btn btn-e">
+                    Encriptar!
+                </button>
+                <button id="btn-d" class="btn btn-d">
+                    Desencriptar!
+                </button>                
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="card">
+                <div id="resultado" class="resultado">
+                    <p id="out-texto"></p>
+                    <button id="btn-copy" class="btn btn-copy">COPIAR</button>
+                </div>
+                <div id="predeterminado" class="predeterminado">
+                    <img src="./assets/img1.png" alt="" width="350">
+                    <h4>Ningún mensaje fue encontrado</h4>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
